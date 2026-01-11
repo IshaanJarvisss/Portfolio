@@ -28,7 +28,7 @@ nav a:hover {
 .section {
     max-width: 900px;
     margin: auto;
-    padding: 50px 20px;
+    padding: 35px 20px;   /* reduced from 50 to 35 */
     text-align: center;
 }
 
@@ -83,3 +83,31 @@ iframe {
     margin-top: 20px;
     box-shadow: 0 0 30px rgba(0,0,0,0.6);
 }
+
+/* POP ANIMATION EFFECT */
+.card,
+.btn,
+img.profile {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* CARD HOVER */
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+}
+
+/* BUTTON HOVER */
+.btn:hover {
+    transform: scale(1.08);
+}
+
+/* IMAGE HOVER */
+img.profile:hover {
+    transform: scale(1.05);
+}
+
+.section:first-of-type {
+    padding-top: 20px;
+}
+
